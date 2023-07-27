@@ -1,0 +1,247 @@
+/* CSS RESET 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navbar */
+#navbar {
+    /* background-color:rgb(143, 195, 233); */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+}
+
+/* NAVIGATION BAR: LOGO AND IMAGE  */
+#logo {
+    margin: 2px 4px;
+}
+
+
+#logo img {
+    /* cursor:pointer; */
+    margin: 0px 2px;
+    height: 108px;
+    cursor:pointer;
+}
+
+/* NAVIGATION BAR : LIST styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    /* margin: 10px 4px; */
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 30px;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    
+    
+    /* padding:10px 20px  */
+}
+
+#navbar ul li a:hover {
+    
+    background-color: white;
+    color: black;
+    
+    
+    /* padding:10px 20px  */
+}
+
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url(pranjall-kumar-sejqj6Eaqe8-unsplash.png) no-repeat center center/cover;
+    position: absolute;
+    height: 97%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Services Section  */
+.services-container
+{
+    margin-top:170px;
+    margin-bottom: 10px;
+    padding: 2px 0px;
+    background-color: rgba(128, 128, 128, 0.377);
+}
+#service{
+    margin: 40px 16px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#service .box {
+    /* border: 2px solid rgb(198, 40, 40); */
+    width:25%;
+    /* height: 40%; */
+    margin: 0px 40px;
+    padding: 0px 8px 20px 8px;
+    border-radius: 15px;
+    background-color: rgba(91, 75, 68, 0.662);
+}
+
+#service .box img{
+    /* border: 2px solid rgb(71, 56, 56);/ */
+    height: 300px;
+    display:block;
+    margin: auto;
+    
+}
+#box2 img{
+    
+    margin: 0;
+    padding:12px 12px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carditems .card{
+    display: flex;
+    background-color: wheat;
+    padding:10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:2px solid black;
+    border-radius:23px;
+    margin:19px;
+    width:60vw;
+}
+
+.card .h-secondary{
+    border-radius: 40px;
+    padding: 9px;
+    background: none;
+}
+.card .h-secondary:hover{
+    color:white;
+    /* background-color: black;  */
+}
+.contact
+{
+    background-color:rgba(73, 73, 73, 0.262);
+    background-image: url("/p2/miles-burke-idhx-MOCDSk-unsplash.png");
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.contact::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form h3{
+    width:66%;
+}
+.form div{
+    margin: 4px;
+    padding: 4px;
+}
+
+/* UTILITY CLASS */
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'Baloo 2', cursive; */
+    
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 20px;
+    /* font-family: 'Baloo 2', cursive; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer
+}
+.h-secondary:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+.center{
+    text-align: justify;
+}
+.btn{
+    padding: 0px 13px;
+    border: 2px solid white;
+    color: white;
+    margin: 5px 4px;
+    border-radius: 20px;
+    font-size: 2.2rem;
+    background-color: rgba(244, 77, 5, 0.266);
+    cursor:pointer;
+    
+}
+.btn:hover{
+    color:  rgba(244, 77, 5);
+    background-color: rgba(255, 255, 255, 0.789);
+    border-color: rgba(244, 77, 5);
+}
